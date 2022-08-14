@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1586783134029144, guid: 9396d1599b0e3dc41852d63c6cc963c5, type: 3}
       propertyPath: m_Name
-      value: SpawnBase (1)
+      value: EnemyRespawnBase
       objectReference: {fileID: 0}
     - target: {fileID: 4529820263909546, guid: 9396d1599b0e3dc41852d63c6cc963c5, type: 3}
       propertyPath: m_RootOrder
@@ -4923,7 +4923,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7235eb1e3f1cecd418a496923f89315e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 0}
+  _player: {fileID: 4665311256347571889, guid: c538a10b1cb629a408afac6581e77806, type: 3}
   _spawnedEnemy: {fileID: 3362469025160016580, guid: 469415abfce98be469b7e3a82ec79353, type: 3}
-  _playerBase: {fileID: 0}
-  _destroyBase: {fileID: 0}
+  _destroyBase: {fileID: 6474537593921241731, guid: 9db7ec8d37cdf824db82aaf37b7fceeb, type: 3}
