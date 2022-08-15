@@ -10,36 +10,32 @@ public class SpawnerEnemies : MonoBehaviour
     [SerializeField] private Transform _groupSpawnedEnemies;
     [SerializeField] private ParticleSystem _particleEnemyRespawnBase;
 
-
-
     private bool _isSpawnStart;
-    private WaitForSeconds shortWait;
-    private bool corountineWork;
+    private WaitForSeconds _shortWait;
+    private bool _corountineWork;
 
-    public void SetStart(bool isStart)
+    public void SpawnStart(bool isStart)
     {
         _isSpawnStart = isStart;
         if (_isSpawnStart)
         {
-            StartCoroutine(Spawn(shortWait));
+            StartCoroutine(Spawn(_shortWait));
         }
         else
         {
-            StopCoroutine(Spawn(shortWait));
+            StopCoroutine(Spawn(_shortWait));
         }
     }
 
     private void Awake()
     {
-        shortWait = new WaitForSeconds(2f);
+        _shortWait = new WaitForSeconds(2f);
     }
 
     private IEnumerator Spawn(WaitForSeconds shortWait)
     {
-        while (_isSpawnStart& corountineWork==false)
+        while (_isSpawnStart )
         {
-            corountineWork = true;
-
             Enemy enemy = Instantiate(_spawnedEnemy, transform.position, Quaternion.identity);
             enemy.transform.SetParent(_groupSpawnedEnemies);
             enemy.Initialize(_player, _destroyBase);
@@ -48,9 +44,6 @@ public class SpawnerEnemies : MonoBehaviour
             particle.transform.SetParent(this.transform);
 
             yield return shortWait;
-            corountineWork = false;
         }
-
-        yield return null; 
     }
 }

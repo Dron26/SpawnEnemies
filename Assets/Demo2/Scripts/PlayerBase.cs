@@ -10,7 +10,7 @@ public class PlayerBase : MonoBehaviour
         if (other.TryGetComponent<Player>(out Player player))
         {
             _isPlayerEnter = true;
-           _spawnerEnemies.SetStart(_isPlayerEnter);
+           _spawnerEnemies.SpawnStart(_isPlayerEnter);
         }
     }
 
@@ -19,7 +19,7 @@ public class PlayerBase : MonoBehaviour
         if (other.TryGetComponent<Player>(out Player player))
         {
             _isPlayerEnter = false;
-            _spawnerEnemies.SetStart(_isPlayerEnter);
+            _spawnerEnemies.SpawnStart(_isPlayerEnter);
         }
     }
 }
