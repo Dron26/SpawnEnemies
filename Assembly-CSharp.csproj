@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{47EB80BB-64F1-6FF5-F50D-E81C54646F37}</ProjectGuid>
+    <ProjectGuid>{CE42B9E4-BA7F-D552-F5B0-D049F7B40E6B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -124,6 +124,7 @@
     <Compile Include="Assets\Resurses\Demo1\Scripts\HashAnimationNames.cs" />
     <Compile Include="Assets\Resurses\Standard Assets\Cameras\Scripts\TargetFieldOfView.cs" />
     <Compile Include="Assets\Resurses\Standard Assets\Utility\SimpleMouseRotator.cs" />
+    <Compile Include="Assets\Demo2\Scripts\Enemies.cs" />
     <Compile Include="Assets\Resurses\Standard Assets\ParticleSystems\Scripts\ExplosionFireAndDebris.cs" />
     <Compile Include="Assets\Resurses\Standard Assets\Vehicles\Car\Scripts\Suspension.cs" />
     <Compile Include="Assets\Resurses\Standard Assets\Cameras\Scripts\AbstractTargetFollower.cs" />
@@ -179,7 +180,6 @@
     <Compile Include="Assets\Resurses\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs" />
     <Compile Include="Assets\Resurses\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
     <Compile Include="Assets\Resurses\Standard Assets\ParticleSystems\Scripts\Hose.cs" />
-    <Compile Include="Assets\Demo2\Scripts\Enemies.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resurses\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
@@ -931,7 +931,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{ACDC7240-2244-0569-DB39-8671B3576DEF}</Project>
+      <Project>{BC6E1EDE-C4AF-BE4C-D549-BD12D3492492}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>
