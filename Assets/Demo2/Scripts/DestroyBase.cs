@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class DestroyBase : MonoBehaviour
 {
-    [SerializeField] private Enemies _enemies;
+    [SerializeField] private GroupEnemies _enemies;
+
     private bool _isPlayerEnter;
 
     private void Awake()
@@ -15,7 +16,7 @@ public class DestroyBase : MonoBehaviour
         if (other.TryGetComponent<Player>(out Player player))
         {
             _isPlayerEnter = true;
-            _enemies.SetDestroy(_isPlayerEnter);
+            _enemies.DestroyChild(_isPlayerEnter);
         }
     }
 
@@ -24,7 +25,7 @@ public class DestroyBase : MonoBehaviour
         if (other.TryGetComponent<Player>(out Player player))
         {
             _isPlayerEnter = false;
-            _enemies.SetDestroy(_isPlayerEnter);
+            _enemies.DestroyChild(_isPlayerEnter);
         }
     }
 }

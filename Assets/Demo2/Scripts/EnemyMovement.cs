@@ -1,20 +1,18 @@
 using UnityEngine;
 
-[RequireComponent(typeof(HashAnimationNamesDemo2))]
 [RequireComponent(typeof(Animator))]
 
 public class EnemyMovement : MonoBehaviour
 {
-    private HashAnimationNamesDemo2 _animBase;
     private Animator _animator;
     private float _walk;
+    static int WalkOutHash;
 
     private void Awake()
     {
-        gameObject.AddComponent<HashAnimationNamesDemo2>();
-        _animBase = GetComponent<HashAnimationNamesDemo2>();
-        _animator = GetComponent<Animator>();
+        _animator=GetComponent<Animator>();
+           WalkOutHash = Animator.StringToHash("Forward");
         _walk = 1;
-        _animator.SetFloat(_animBase.WalkOutHash, _walk);
+        _animator.SetFloat(AnimatorParameters.WalkOutHash, _walk);
     }
 }

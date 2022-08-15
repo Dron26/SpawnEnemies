@@ -111,7 +111,7 @@
     <Compile Include="Assets\Resurses\Demo1\Scripts\InsideSide.cs" />
     <Compile Include="Assets\Resurses\Standard Assets\Environment\Water\Water\Scripts\GerstnerDisplace.cs" />
     <Compile Include="Assets\Resurses\Standard Assets\Cameras\Scripts\PivotBasedCameraRig.cs" />
-    <Compile Include="Assets\Demo2\Scripts\HashAnimationNamesDemo2.cs" />
+    <Compile Include="Assets\Demo2\Scripts\AnimatorParameters.cs" />
     <Compile Include="Assets\Resurses\Demo1\Scripts\OutsideSide.cs" />
     <Compile Include="Assets\Resurses\Standard Assets\Utility\AutoMoveAndRotate.cs" />
     <Compile Include="Assets\Resurses\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
@@ -124,7 +124,6 @@
     <Compile Include="Assets\Resurses\Demo1\Scripts\HashAnimationNames.cs" />
     <Compile Include="Assets\Resurses\Standard Assets\Cameras\Scripts\TargetFieldOfView.cs" />
     <Compile Include="Assets\Resurses\Standard Assets\Utility\SimpleMouseRotator.cs" />
-    <Compile Include="Assets\Demo2\Scripts\Enemies.cs" />
     <Compile Include="Assets\Resurses\Standard Assets\ParticleSystems\Scripts\ExplosionFireAndDebris.cs" />
     <Compile Include="Assets\Resurses\Standard Assets\Vehicles\Car\Scripts\Suspension.cs" />
     <Compile Include="Assets\Resurses\Standard Assets\Cameras\Scripts\AbstractTargetFollower.cs" />
@@ -180,6 +179,8 @@
     <Compile Include="Assets\Resurses\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs" />
     <Compile Include="Assets\Resurses\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
     <Compile Include="Assets\Resurses\Standard Assets\ParticleSystems\Scripts\Hose.cs" />
+    <Compile Include="Assets\Demo2\Scripts\ParticleEnemyRespawnBase.cs" />
+    <Compile Include="Assets\Demo2\Scripts\GroupEnemies.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resurses\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
