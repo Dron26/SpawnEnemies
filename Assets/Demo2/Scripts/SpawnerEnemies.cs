@@ -19,6 +19,14 @@ public class SpawnerEnemies : MonoBehaviour
     public void SetStart(bool isStart)
     {
         _isSpawnStart = isStart;
+        if (_isSpawnStart)
+        {
+            StartCoroutine(Spawn(shortWait));
+        }
+        else
+        {
+            StopCoroutine(Spawn(shortWait));
+        }
     }
 
     private void Awake()
@@ -26,14 +34,9 @@ public class SpawnerEnemies : MonoBehaviour
         shortWait = new WaitForSeconds(2f);
     }
 
-    private void Update()
-    {
-        StartCoroutine(Spawn(shortWait));
-    }
-
     private IEnumerator Spawn(WaitForSeconds shortWait)
     {
-        if (_isSpawnStart & corountineWork == false)
+        while (_isSpawnStart& corountineWork==false)
         {
             corountineWork = true;
 
