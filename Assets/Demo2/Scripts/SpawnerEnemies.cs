@@ -29,7 +29,8 @@ public class SpawnerEnemies : MonoBehaviour
 
     private void Awake()
     {
-        _shortWait = new WaitForSeconds(2f);
+        float timeWaite = 2f;
+        _shortWait = new WaitForSeconds(timeWaite);
     }
 
     private IEnumerator Spawn(WaitForSeconds shortWait)
